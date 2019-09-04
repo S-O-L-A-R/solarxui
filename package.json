@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "start-storybook -p 9001 -c .storybook",
     "build": "npm-run-all --parallel build:lib build:def",
-    "build:demo": "build-storybook -p 9001 -c .storybook -o .doc",
+    "build:demo": "build-storybook -c .storybook -o .doc",
     "build:lib": "tsc",
     "build:def": "tsc --allowJs false -d true"
   },
