@@ -1,0 +1,7 @@
+{
+	"*.(tsx|ts)": [
+		"prettier --write",
+		"tslint --fix --project .",
+		"git add"
+	]
+}
