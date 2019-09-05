@@ -1,1 +1,1 @@
-export { default as SOLAR } from './SOLAR'
+export { default as SOLAR } from './components/SOLAR/index'
