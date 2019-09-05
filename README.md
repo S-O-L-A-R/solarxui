@@ -30,3 +30,26 @@ Build Library
 ```
 npm run build
 ```
+
+### Setup
+
+In header section
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Prompt:300,400&display=swap&subset=thai" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sarabun:300,700&display=swap&subset=thai" rel="stylesheet">
+```
+
+In React App
+
+```jsx
+import React from 'react'
+import { SolarXUIStylesheet } from 'solarxui
+
+const App = () => (
+    <>
+        <SolarXUIStyleSheet />
+        <div>Your App</div>
+    </>
+)
+```
