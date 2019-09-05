@@ -10,7 +10,8 @@ const typography = css`
 	body {
 		font-family: 'Sarabun', sans-serif;
 		font-weight: 300;
-		font-size: 16px .bold {
+		font-size: 16px;
+		.bold {
 			font-weight: 700;
 		}
 	}
