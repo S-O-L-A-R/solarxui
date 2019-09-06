@@ -44,7 +44,7 @@ In React App
 
 ```jsx
 import React from 'react'
-import { SolarXUIStylesheet } from 'solarxui
+import { SolarXUIStylesheet } from 'solarxui'
 
 const App = () => (
     <>
