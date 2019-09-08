@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "React UI Framework with S.O.L.A.R Design System",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "dev": "start-storybook -p 9001 -c .storybook",
     "build": "npm-run-all --parallel build:lib build:def",
