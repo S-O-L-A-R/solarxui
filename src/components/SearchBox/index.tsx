@@ -13,8 +13,12 @@ interface ContainerProps {
 	width: string
 }
 
+const SEARCH_BOX_HEIGHT = '50px'
+
 const Container = styled.div`
 	width: ${(props: ContainerProps) => props.width};
+	height: ${SEARCH_BOX_HEIGHT};
+	box-sizing: border-box;
 	padding: 12px 16px;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 	border-radius: 16px;
