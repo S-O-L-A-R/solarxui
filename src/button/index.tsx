@@ -15,12 +15,8 @@ const StyledButton = styled.button`
 	background-color: ${primary};
 	color: white;
 	font-size: 20px;
-
-	&:active,
-	&:focus {
-		outline: none;
-		border: 0;
-	}
+	outline: none;
+	border: 0;
 
 	&.small {
 		height: 24px;

@@ -12,14 +12,12 @@ const StyledCircleButton = styled.button`
 	border-radius: 50%;
 	background-color: ${primary};
 	color: white;
-	min-height: ${(props: { size: number }) => props.size}px;
-	min-width: ${(props: { size: number }) => props.size}px;
-
-	&:active,
-	&:focus {
-		outline: none;
-		border: 0;
-	}
+	min-height: 32px;
+	min-width: 32px;
+	height: ${(props: { size: number }) => props.size}px;
+	width: ${(props: { size: number }) => props.size}px;
+	outline: none;
+	border: 0;
 `
 
 function CircleButton(props: Props) {
