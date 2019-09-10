@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { text } from '@storybook/addon-knobs'
 import styled from 'styled-components'
-import SearchBox from './'
+import SearchBox from '.'
 
 const TesterBox = styled.div`
 	display: flex;
