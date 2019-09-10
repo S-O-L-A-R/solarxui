@@ -5,18 +5,13 @@ import SearchIcon from '../../icons/search'
 
 interface Props extends HTMLAttributes<HTMLInputElement> {
 	placeholder: string
-	width: string
 	className?: string
-}
-
-interface ContainerProps {
-	width: string
 }
 
 const SEARCH_BOX_HEIGHT = '50px'
 
 const Container = styled.div`
-	width: ${(props: ContainerProps) => props.width};
+	width: 100%;
 	height: ${SEARCH_BOX_HEIGHT};
 	box-sizing: border-box;
 	padding: 12px 16px;
@@ -38,9 +33,9 @@ const Container = styled.div`
 	}
 `
 
-const SearchBox = ({ placeholder, className, width, ...props }: Props) => {
+const SearchBox = ({ placeholder, className, ...props }: Props) => {
 	return (
-		<Container className={className} width={width}>
+		<Container className={className}>
 			<SearchIcon size={18} color={gray[2]} />
 			<input
 				className="highlight gray2-text"
@@ -53,7 +48,6 @@ const SearchBox = ({ placeholder, className, width, ...props }: Props) => {
 
 SearchBox.defaultProps = {
 	placeholder: 'Find your favorite menu...',
-	width: '350px',
 }
 
 export default SearchBox

@@ -9,14 +9,14 @@ const TesterBox = styled.div`
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	width: ${({ width }: { width: string }) => width};
 `
 
 storiesOf('Components', module).add('SearchBox', () => (
-	<TesterBox>
+	<TesterBox width={text('Container width', '300px')}>
 		<SearchBox
 			className={text('className', '')}
 			placeholder={text('placeholder', SearchBox.defaultProps.placeholder)}
-			width={text('width', SearchBox.defaultProps.width)}
 		/>
 	</TesterBox>
 ))
