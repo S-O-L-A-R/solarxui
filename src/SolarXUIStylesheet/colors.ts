@@ -29,6 +29,9 @@ const colors = css`
 	.gray2-bg {
 		background-color: ${gray[2]};
 	}
+	.white-bg {
+		background-color: white;
+	}
 	.color-state {
 		&:active {
 			filter: brightness(0.8);

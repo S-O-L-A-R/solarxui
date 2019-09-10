@@ -32,6 +32,7 @@ storiesOf('Basic Style', module)
 			<div className="danger-bg">danger-bg class</div>
 			<div className="gray1-bg">gray1-bg class</div>
 			<div className="gray2-bg">gray2-bg class</div>
+			<div className="white-bg">white-bg class</div>
 			<ColorTesterBox className="primary-bg color-state">
 				color-state class
 			</ColorTesterBox>
