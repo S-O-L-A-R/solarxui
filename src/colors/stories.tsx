@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { number, select } from '@storybook/addon-knobs'
+import { select } from '@storybook/addon-knobs'
 import styled, { css } from 'styled-components'
 import { primary, danger, gray } from '.'
 
