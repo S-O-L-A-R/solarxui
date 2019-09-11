@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { gray } from '../../colors'
+import { gray } from '../colors'
 
 const SEARCH_BOX_HEIGHT = '50px'
 

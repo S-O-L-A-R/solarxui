@@ -1,11 +1,9 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, HTMLAttributes } from 'react'
 import styled from 'styled-components'
 import { primary } from '../colors'
 
-interface Props {
-	className?: string
+export interface Props extends HTMLAttributes<HTMLButtonElement> {
 	size: number
-	children?: ReactNode
 }
 
 const StyledCircleButton = styled.button`
@@ -20,13 +18,14 @@ const StyledCircleButton = styled.button`
 	border: 0;
 `
 
-function CircleButton(props: Props) {
+function CircleButton({ className, size, children, ...buttonProps }: Props) {
 	return (
 		<StyledCircleButton
-			className={`color-state highlight ${props.className}`}
-			size={props.size}
+			className={`color-state highlight ${className}`}
+			size={size}
+			{...buttonProps}
 		>
-			{props.children}
+			{children}
 		</StyledCircleButton>
 	)
 }
