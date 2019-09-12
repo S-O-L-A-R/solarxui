@@ -1,9 +1,9 @@
 import React, { HTMLAttributes } from 'react'
-import { gray } from '../../colors'
-import SearchIcon from '../../icons/search'
+import { gray } from '../colors'
+import SearchIcon from '../icons/search'
 import { Container } from './styled'
 
-interface Props extends HTMLAttributes<HTMLInputElement> {
+export interface Props extends HTMLAttributes<HTMLInputElement> {
 	placeholder: string
 	className?: string
 }

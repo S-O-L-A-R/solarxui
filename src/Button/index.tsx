@@ -1,11 +1,9 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, HTMLAttributes } from 'react'
 import styled from 'styled-components'
 import { primary } from '../colors'
 
-interface Props {
-	className?: string
+export interface Props extends HTMLAttributes<HTMLButtonElement> {
 	height: number
-	children: ReactNode | string
 }
 
 const StyledButton = styled.button`
@@ -29,13 +27,14 @@ const StyledButton = styled.button`
 	}
 `
 
-function Button(props: Props) {
+function Button({ height, className, children, ...buttonProps }: Props) {
 	return (
 		<StyledButton
-			className={`color-state highlight ${props.className}`}
-			height={props.height}
+			className={`color-state highlight ${className}`}
+			height={height}
+			{...buttonProps}
 		>
-			{props.children}
+			{children}
 		</StyledButton>
 	)
 }
