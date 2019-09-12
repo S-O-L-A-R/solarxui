@@ -20,4 +20,6 @@ export const ModalContainer = styled(animated.div)`
 	border-radius: 16px 16px 0 0;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 	z-index: 3;
+	max-height: 75vh;
+	overflow: hidden;
 `
