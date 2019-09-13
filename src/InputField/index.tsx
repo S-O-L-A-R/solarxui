@@ -6,20 +6,16 @@ export interface Props extends HTMLAttributes<HTMLInputElement> {
 	className?: string
 }
 
-const Input = ({ placeholder, className, ...props }: Props) => {
+const InputField = ({ placeholder, className, ...props }: Props) => {
 	return (
 		<Container className={className}>
-			<input
-				className="highlight gray2-text"
-				placeholder={placeholder}
-				{...props}
-			/>
+			<input className="highlight" placeholder={placeholder} {...props} />
 		</Container>
 	)
 }
 
-Input.defaultProps = {
+InputField.defaultProps = {
 	placeholder: 'Menu Name...',
 }
 
-export default Input
+export default InputField

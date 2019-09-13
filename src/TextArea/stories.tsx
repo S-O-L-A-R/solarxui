@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { text } from '@storybook/addon-knobs'
 import styled from 'styled-components'
-import Input from '.'
+import TextArea from '.'
 
 const TesterBox = styled.div`
 	display: flex;
@@ -12,11 +12,11 @@ const TesterBox = styled.div`
 	width: ${({ width }: { width: string }) => width};
 `
 
-storiesOf('Input', module).add('Input', () => (
+storiesOf('Input', module).add('TextArea', () => (
 	<TesterBox width={text('Container width', '300px')}>
-		<Input
+		<TextArea
 			className={text('className', '')}
-			placeholder={text('placeholder', Input.defaultProps.placeholder)}
+			placeholder={text('placeholder', TextArea.defaultProps.placeholder)}
 		/>
 	</TesterBox>
 ))

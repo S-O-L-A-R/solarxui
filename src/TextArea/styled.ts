@@ -1,24 +1,25 @@
 import styled from 'styled-components'
 import { gray } from '../colors'
 
-const SEARCH_BOX_HEIGHT = '40px'
+const TEXT_AREA_HEIGHT = '140px'
 
 export const Container = styled.div`
 	width: 100%;
-	height: ${SEARCH_BOX_HEIGHT};
+	height: ${TEXT_AREA_HEIGHT};
 	box-sizing: border-box;
-	padding: 8px 16px;
+	padding: 10px 16px;
 	background: ${gray[0]};
-	border-radius: 100vw;
+	border-radius: 16px;
 	display: flex;
 	align-items: center;
-	input {
-		outline: none;
+	textarea {
 		border: none;
+		outline: none;
 		font-size: 18px;
-		font-weight: 300;
 		width: 100%;
+		height: 100%;
 		background: ${gray[0]};
+		resize: none;
 		::placeholder {
 			color: ${gray[2]};
 		}
