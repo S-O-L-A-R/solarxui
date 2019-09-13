@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import { primary } from '../colors'
 
 export interface Props extends HTMLAttributes<HTMLButtonElement> {
-	height: number
+	height?: number
 }
 
 const StyledButton = styled.button`
 	border-radius: 100px;
-	height: ${(props: { height: number }) => props.height}px;
+	height: ${(props: Props) => props.height}px;
 	width: 100%;
 	background-color: ${primary};
 	color: white;
