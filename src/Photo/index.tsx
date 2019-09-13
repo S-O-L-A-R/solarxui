@@ -11,7 +11,16 @@ interface Props extends HTMLAttributes<HTMLImageElement> {
 	onClick?: () => void
 }
 
-const Photo = ({ src, variant, alt, size, width, height, onClick }: Props) => {
+const Photo = ({
+	src,
+	variant,
+	alt,
+	size,
+	width,
+	height,
+	onClick,
+	...imgProps
+}: Props) => {
 	const w = width || size
 	const h = height || size
 	return (
@@ -22,6 +31,7 @@ const Photo = ({ src, variant, alt, size, width, height, onClick }: Props) => {
 			height={h}
 			onClick={onClick}
 			variant={variant}
+			{...imgProps}
 		/>
 	)
 }

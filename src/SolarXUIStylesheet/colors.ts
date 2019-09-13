@@ -37,6 +37,9 @@ const colors = css`
 			filter: brightness(0.8);
 		}
 	}
+	.grayscale {
+		filter: grayscale(90%);
+	}
 `
 
 export default colors

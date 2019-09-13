@@ -2,6 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { text } from '@storybook/addon-knobs'
 import styled from 'styled-components'
+import Photo from '../Photo'
 
 const ColorTesterBox = styled.div`
 	display: flex;
@@ -39,5 +40,9 @@ storiesOf('Basic Style', module)
 			<ColorTesterBox className={text('className', '')}>
 				Try it yourself
 			</ColorTesterBox>
+			<Photo
+				src="https://www.w3schools.com/w3css/img_lights.jpg"
+				className="grayscale"
+			/>
 		</div>
 	))
