@@ -3,7 +3,7 @@ import { StyledImageUpload, StyledImageInput, StyledImage } from './styled'
 
 interface Props {
 	image: string | null
-	text?: string
+	text: string
 	onChange?: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
