@@ -14,8 +14,11 @@ const typography = css`
 		.bold {
 			font-weight: 700;
 		}
-		> div,
-		span {
+		div,
+		span,
+		input,
+		button,
+		a {
 			font-weight: 300;
 		}
 	}
