@@ -8,6 +8,9 @@ const colors = css`
 	.danger-text {
 		color: ${danger};
 	}
+	.gray0-text {
+		color: ${gray[0]};
+	}
 	.gray1-text {
 		color: ${gray[1]};
 	}
@@ -22,6 +25,9 @@ const colors = css`
 	}
 	.danger-bg {
 		background-color: ${danger};
+	}
+	.gray0-bg {
+		background-color: ${gray[0]};
 	}
 	.gray1-bg {
 		background-color: ${gray[1]};
