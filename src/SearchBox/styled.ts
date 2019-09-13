@@ -12,6 +12,7 @@ export const Container = styled.div`
 	border-radius: 16px;
 	display: flex;
 	align-items: center;
+	background: white;
 	input {
 		outline: none;
 		border: none;
