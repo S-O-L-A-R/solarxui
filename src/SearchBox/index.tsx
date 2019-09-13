@@ -12,11 +12,7 @@ const SearchBox = ({ placeholder, className, ...props }: Props) => {
 	return (
 		<Container className={className}>
 			<SearchIcon size={18} color={gray[2]} />
-			<input
-				className="highlight gray2-text"
-				placeholder={placeholder}
-				{...props}
-			/>
+			<input className="highlight" placeholder={placeholder} {...props} />
 		</Container>
 	)
 }
