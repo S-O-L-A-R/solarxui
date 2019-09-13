@@ -12,4 +12,10 @@ export { default as CircleButton } from './CircleButton'
 
 export { default as CloseButton } from './CloseButton'
 
-import { default as Modal } from './Modal'
+export { default as Modal } from './Modal'
+
+export { default as Card } from './Card'
+
+export { default as Photo } from './Photo'
+
+export { default as Gap } from './Gap'

@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { text } from '@storybook/addon-knobs'
 import styled from 'styled-components'
-import SearchBox from '.'
+import Card from '.'
 
 const TesterBox = styled.div`
 	display: flex;
@@ -12,11 +12,10 @@ const TesterBox = styled.div`
 	width: ${({ width }: { width: string }) => width};
 `
 
-storiesOf('Input', module).add('SearchBox', () => (
+storiesOf('Card', module).add('Card', () => (
 	<TesterBox width={text('Container width', '300px')}>
-		<SearchBox
-			className={text('className', '')}
-			placeholder={text('placeholder', SearchBox.defaultProps.placeholder)}
-		/>
+		<Card>
+			<div>Example Content</div>
+		</Card>
 	</TesterBox>
 ))
