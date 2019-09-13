@@ -1,15 +1,13 @@
 import React, { HTMLAttributes } from 'react'
 import { Container } from './styled'
 
-export interface Props extends HTMLAttributes<HTMLInputElement> {
-	placeholder: string
-	className?: string
-}
-
-const InputField = ({ placeholder, className, ...props }: Props) => {
+const InputField = ({
+	className,
+	...props
+}: HTMLAttributes<HTMLInputElement>) => {
 	return (
 		<Container className={`gray0-bg ${className}`}>
-			<input className="highlight" placeholder={placeholder} {...props} />
+			<input className="highlight" {...props} />
 		</Container>
 	)
 }
