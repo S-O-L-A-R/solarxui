@@ -12,7 +12,7 @@ const TesterBox = styled.div`
 	width: ${({ width }: { width: string }) => width};
 `
 
-storiesOf('SearchBox', module).add('SearchBox', () => (
+storiesOf('Input', module).add('SearchBox', () => (
 	<TesterBox width={text('Container width', '300px')}>
 		<SearchBox
 			className={text('className', '')}

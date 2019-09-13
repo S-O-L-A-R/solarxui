@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 import { PhotoImg } from './styled'
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLImageElement> {
 	src: string
+	alt: string
+	size: number
 	variant: 'normal' | 'circle'
 	width?: number
 	height?: number
-	size: number
-	alt?: string
 	onClick?: () => void
 }
 
@@ -29,6 +29,7 @@ const Photo = ({ src, variant, alt, size, width, height, onClick }: Props) => {
 Photo.defaultProps = {
 	size: 100,
 	variant: 'normal',
+	alt: '',
 }
 
 export default Photo

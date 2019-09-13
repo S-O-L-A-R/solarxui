@@ -1,11 +1,7 @@
 import React, { ReactNode, HTMLAttributes } from 'react'
 import { Container } from './styled'
 
-interface Props extends HTMLAttributes<HTMLDivElement> {
-	children: ReactNode
-}
-
-const Card = ({ children, ...props }: Props) => (
+const Card = ({ children, ...props }: HTMLAttributes<HTMLDivElement>) => (
 	<Container {...props}>{children}</Container>
 )
 
