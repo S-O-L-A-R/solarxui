@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react'
+import React, { ChangeEvent, createRef } from 'react'
 import { StyledImageUpload, StyledImageInput, StyledImage } from './styled'
 
 interface Props {
@@ -8,14 +8,16 @@ interface Props {
 }
 
 function ImageUpload({ image, text, onChange }: Props) {
-	const input = React.createRef<HTMLInputElement>()
+	const input = createRef<HTMLInputElement>()
 
 	const onSelectFile = () => {
-		input.current!.click()
+		if (!!input.current) {
+			input.current.click()
+		}
 	}
 
 	return (
-		<StyledImageUpload onClick={onSelectFile}>
+		<StyledImageUpload className="gray2-text gray0-bg" onClick={onSelectFile}>
 			{image ? <StyledImage src={image} alt="" /> : text}
 			<StyledImageInput
 				type="file"

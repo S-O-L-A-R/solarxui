@@ -7,7 +7,9 @@ export default function ImageUploadStories() {
 	const [image, setImage] = useState<File | null>(null)
 
 	const onChange = (e: ChangeEvent<HTMLInputElement>) => {
-		setImage(e.target.files![0])
+		if (e.target.files && e.target.files.length > 0) {
+			setImage(e.target.files[0])
+		}
 	}
 
 	return (

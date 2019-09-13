@@ -2,8 +2,6 @@ import styled from 'styled-components'
 import { gray } from '../colors'
 
 export const StyledImageUpload = styled.div`
-	color: #989898;
-	background-color: ${gray[1]};
 	display: flex;
 	justify-content: center;
 	align-items: center;
