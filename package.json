@@ -10,7 +10,8 @@
     "build:demo": "build-storybook -c .storybook -o doc",
     "build:lib": "tsc",
     "build:def": "tsc --allowJs false -d true",
-    "release": "standard-version --no-verify"
+    "release": "standard-version --no-verify",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
