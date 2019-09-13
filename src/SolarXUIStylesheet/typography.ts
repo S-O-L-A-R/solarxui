@@ -14,6 +14,10 @@ const typography = css`
 		.bold {
 			font-weight: 700;
 		}
+		> div,
+		span {
+			font-weight: 300;
+		}
 	}
 `
 
