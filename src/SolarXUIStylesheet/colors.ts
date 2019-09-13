@@ -39,6 +39,7 @@ const colors = css`
 	}
 	.grayscale {
 		filter: grayscale(90%);
+		z-index: 0;
 	}
 `
 
