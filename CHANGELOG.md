@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.5...v0.1.6) (2019-09-13)
+
+
+### Bug Fixes
+
+* Correct Button Props ([b5e9f44](https://github.com/S-O-L-A-R/solor-ui/commit/b5e9f44))
+
 ### [0.1.5](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.4...v0.1.5) (2019-09-13)
 
 
