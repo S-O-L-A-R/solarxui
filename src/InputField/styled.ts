@@ -8,7 +8,6 @@ export const Container = styled.div`
 	height: ${INPUT_HEIGHT};
 	box-sizing: border-box;
 	padding: 8px 16px;
-	background: ${gray[0]};
 	border-radius: 100vw;
 	display: flex;
 	align-items: center;

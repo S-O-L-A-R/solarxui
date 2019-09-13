@@ -8,7 +8,6 @@ export const Container = styled.div`
 	height: ${TEXT_AREA_HEIGHT};
 	box-sizing: border-box;
 	padding: 10px 16px;
-	background: ${gray[0]};
 	border-radius: 16px;
 	display: flex;
 	align-items: center;

@@ -8,7 +8,7 @@ export interface Props extends HTMLAttributes<HTMLInputElement> {
 
 const InputField = ({ placeholder, className, ...props }: Props) => {
 	return (
-		<Container className={className}>
+		<Container className={`gray0-bg ${className}`}>
 			<input className="highlight" placeholder={placeholder} {...props} />
 		</Container>
 	)

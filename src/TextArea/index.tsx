@@ -8,7 +8,7 @@ export interface Props extends HTMLAttributes<HTMLTextAreaElement> {
 
 const TextArea = ({ placeholder, className, ...props }: Props) => {
 	return (
-		<Container className={className}>
+		<Container className={`gray0-bg ${className}`}>
 			<textarea className="highlight" placeholder={placeholder} {...props} />
 		</Container>
 	)
