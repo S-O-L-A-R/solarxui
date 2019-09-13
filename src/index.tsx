@@ -19,3 +19,5 @@ export { default as Card } from './Card'
 export { default as Photo } from './Photo'
 
 export { default as Gap } from './Gap'
+
+export { default as ImageUpload } from './ImageUpload'

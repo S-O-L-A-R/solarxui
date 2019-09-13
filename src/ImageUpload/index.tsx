@@ -1,34 +1,13 @@
-import React, { ChangeEvent, useState, useCallback } from 'react'
-import styled from 'styled-components'
-import { gray } from '../colors'
-
-const StyledImageUpload = styled.div`
-	color: #989898;
-	background-color: ${gray[1]};
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 24px;
-	height: 210px;
-`
-
-const StyledImageInput = styled.input`
-	display: none;
-`
-
-const StyledImage = styled.img`
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-`
+import React, { ChangeEvent } from 'react'
+import { StyledImageUpload, StyledImageInput, StyledImage } from './styled'
 
 interface Props {
 	image: string | null
-	text: string
-	onChange: (e: ChangeEvent<HTMLInputElement>) => void
+	text?: string
+	onChange?: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
-function ImageUpload(props: Props) {
+function ImageUpload({ image, text, onChange }: Props) {
 	const input = React.createRef<HTMLInputElement>()
 
 	const onSelectFile = () => {
@@ -37,12 +16,12 @@ function ImageUpload(props: Props) {
 
 	return (
 		<StyledImageUpload onClick={onSelectFile}>
-			{props.image ? <StyledImage src={props.image} alt="" /> : props.text}
+			{image ? <StyledImage src={image} alt="" /> : text}
 			<StyledImageInput
 				type="file"
 				accept="image/*"
 				ref={input}
-				onChange={props.onChange}
+				onChange={onChange}
 			/>
 		</StyledImageUpload>
 	)
