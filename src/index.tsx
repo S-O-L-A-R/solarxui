@@ -41,3 +41,5 @@ export { default as ImageUploadModal } from './ImageUploadModal'
 export { default as NumberPicker } from './NumberPicker'
 
 export { default as Switch } from './Switch'
+
+export { default as Separator } from './Separator'
