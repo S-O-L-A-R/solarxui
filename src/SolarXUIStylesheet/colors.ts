@@ -43,6 +43,10 @@ const colors = css`
 			filter: brightness(0.8);
 		}
 	}
+	.grayscale {
+		filter: grayscale(90%);
+		z-index: 0;
+	}
 `
 
 export default colors

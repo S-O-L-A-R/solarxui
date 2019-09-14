@@ -1,6 +1,6 @@
 {
   "name": "solarxui",
-  "version": "0.1.1",
+  "version": "0.1.6",
   "description": "React UI Framework with S.O.L.A.R Design System",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,7 +10,8 @@
     "build:demo": "build-storybook -c .storybook -o doc",
     "build:lib": "tsc",
     "build:def": "tsc --allowJs false -d true",
-    "release": "standard-version --no-verify"
+    "release": "standard-version --no-verify",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
