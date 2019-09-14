@@ -21,7 +21,7 @@ const Modal = ({ isOpen, onClose, children }: Props) => {
 			{isOpen && <Overlay onClick={onClose} />}
 			<ModalContainer style={modalAnimStyle}>
 				{children}
-				<ScrollLock isActive={isOpen} />
+				<ScrollLock isActive={isOpen} accountForScrollbars={false} />
 			</ModalContainer>
 		</>
 	)
