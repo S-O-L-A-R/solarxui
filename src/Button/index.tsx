@@ -1,8 +1,8 @@
-import React, { ReactNode, HTMLAttributes } from 'react'
+import React, { ReactNode, HTMLAttributes, ButtonHTMLAttributes } from 'react'
 import styled from 'styled-components'
 import { primary } from '../colors'
 
-export interface Props extends HTMLAttributes<HTMLButtonElement> {
+export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 	height?: number
 }
 
