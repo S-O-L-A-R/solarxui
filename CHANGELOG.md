@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.7...v0.1.9) (2019-09-14)
+
+
+### Features
+
+* Separator ([613c27e](https://github.com/S-O-L-A-R/solor-ui/commit/613c27e))
+
 ### [0.1.8](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.7...v0.1.8) (2019-09-14)
 
 
