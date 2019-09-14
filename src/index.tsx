@@ -25,3 +25,5 @@ export { default as InputField } from './InputField'
 export { default as TextArea } from './TextArea'
 
 export { default as ImageUpload } from './ImageUpload'
+
+export { default as Switch } from './Switch'
