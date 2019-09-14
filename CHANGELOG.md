@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.9...v0.1.10) (2019-09-14)
+
+
+### Bug Fixes
+
+* fix undo icon ([c19f29f](https://github.com/S-O-L-A-R/solor-ui/commit/c19f29f))
+
 ### [0.1.9](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.7...v0.1.9) (2019-09-14)
 
 
