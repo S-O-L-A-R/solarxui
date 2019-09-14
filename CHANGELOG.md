@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.10...v0.1.11) (2019-09-14)
+
+
+### Bug Fixes
+
+* close button modal ([04e263b](https://github.com/S-O-L-A-R/solor-ui/commit/04e263b))
+
 ### [0.1.10](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.9...v0.1.10) (2019-09-14)
 
 
