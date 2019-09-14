@@ -29,3 +29,5 @@ export { default as ImageUpload } from './ImageUpload'
 export { default as ImageUploadModal } from './ImageUploadModal'
 
 export { default as NumberPicker } from './NumberPicker'
+
+export { default as Switch } from './Switch'
