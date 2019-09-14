@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.15](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.14...v0.1.15) (2019-09-14)
+
+
+### Bug Fixes
+
+* button attributes ([cfc1339](https://github.com/S-O-L-A-R/solor-ui/commit/cfc1339))
+* Modal scroll ([5422d0b](https://github.com/S-O-L-A-R/solor-ui/commit/5422d0b))
+
 ### [0.1.14](https://github.com/S-O-L-A-R/solor-ui/compare/v0.1.13...v0.1.14) (2019-09-14)
 
 
