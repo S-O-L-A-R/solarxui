@@ -11,6 +11,7 @@ const StyledCloseButton = styled.button`
 	border-radius: 50%;
 	border: 1px solid ${gray[1]};
 	outline: none;
+	background-color: transparent;
 `
 
 function CloseButton(props: HTMLAttributes<HTMLButtonElement>) {
