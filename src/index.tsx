@@ -10,6 +10,16 @@ export { default as Button } from './Button'
 
 export { default as CircleButton } from './CircleButton'
 
+export { default as DeleteButton } from './CircleButton/DeleteButton'
+
+export { default as EditButton } from './CircleButton/EditButton'
+
+export { default as UndoButton } from './CircleButton/UndoButton'
+
+export { default as PlusButton } from './CircleButton/PlusButton'
+
+export { default as MinusButton } from './CircleButton/MinusButton'
+
 export { default as CloseButton } from './CloseButton'
 
 export { default as Modal } from './Modal'

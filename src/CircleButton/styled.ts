@@ -1,16 +1,21 @@
-import styled from 'styled-components'
-import { primary } from '../colors'
+import styled, { css } from 'styled-components'
 
-export const StyledCircleButton = styled.button`
-	border-radius: 50%;
-	background-color: ${primary};
+function applySize({ size }: { size: number }) {
+	return css`
+		width: ${`${size}px`};
+		height: ${`${size}px`};
+	`
+}
+
+export const Container = styled.button`
 	color: white;
-	height: ${(props: { size: number }) => props.size}px;
-	width: ${(props: { size: number }) => props.size}px;
-	outline: none;
-	border: 0;
+	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	outline: none;
+	border: none;
 	padding: 0;
+	cursor: pointer;
+	${applySize};
 `

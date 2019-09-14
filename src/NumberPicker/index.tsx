@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyledContainer, StyledNumberContainer } from './styled'
-import MinusButton from './MinusButton'
-import PlusButton from './PlusButton'
+import MinusButton from '../CircleButton/MinusButton'
+import PlusButton from '../CircleButton/PlusButton'
 
 interface Props {
 	value: number
