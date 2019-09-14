@@ -18,6 +18,7 @@ const typography = css`
 		span,
 		input,
 		button,
+		textarea,
 		a {
 			font-weight: 300;
 		}

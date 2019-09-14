@@ -20,4 +20,8 @@ export { default as Photo } from './Photo'
 
 export { default as Gap } from './Gap'
 
+export { default as InputField } from './InputField'
+
+export { default as TextArea } from './TextArea'
+
 export { default as ImageUpload } from './ImageUpload'
