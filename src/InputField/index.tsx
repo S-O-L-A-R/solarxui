@@ -1,10 +1,10 @@
-import React, { HTMLAttributes } from 'react'
+import React, { InputHTMLAttributes } from 'react'
 import { Container } from './styled'
 
 const InputField = ({
 	className,
 	...props
-}: HTMLAttributes<HTMLInputElement>) => {
+}: InputHTMLAttributes<HTMLInputElement>) => {
 	return (
 		<Container className={`gray0-bg ${className}`}>
 			<input className="highlight" {...props} />

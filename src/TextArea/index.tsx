@@ -1,10 +1,10 @@
-import React, { HTMLAttributes } from 'react'
+import React, { TextareaHTMLAttributes } from 'react'
 import { Container } from './styled'
 
 const TextArea = ({
 	className,
 	...props
-}: HTMLAttributes<HTMLTextAreaElement>) => {
+}: TextareaHTMLAttributes<HTMLTextAreaElement>) => {
 	return (
 		<Container className={`gray0-bg ${className}`}>
 			<textarea className="highlight" {...props} />

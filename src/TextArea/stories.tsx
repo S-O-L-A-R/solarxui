@@ -17,6 +17,7 @@ storiesOf('Input', module).add('TextArea', () => (
 		<TextArea
 			className={text('className', '')}
 			placeholder={text('placeholder', TextArea.defaultProps.placeholder)}
+			value={text('value', '')}
 		/>
 	</TesterBox>
 ))

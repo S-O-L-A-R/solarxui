@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react'
+import React, { InputHTMLAttributes } from 'react'
 import { gray } from '../colors'
 import SearchIcon from '../icons/search'
 import { Container } from './styled'
@@ -6,7 +6,7 @@ import { Container } from './styled'
 const SearchBox = ({
 	className,
 	...props
-}: HTMLAttributes<HTMLInputElement>) => {
+}: InputHTMLAttributes<HTMLInputElement>) => {
 	return (
 		<Container className={className}>
 			<SearchIcon size={18} color={gray[2]} />

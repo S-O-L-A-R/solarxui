@@ -14,9 +14,6 @@ const TesterBox = styled.div`
 
 storiesOf('Input', module).add('SearchBox', () => (
 	<TesterBox width={text('Container width', '300px')}>
-		<SearchBox
-			className={text('className', '')}
-			placeholder={text('placeholder', SearchBox.defaultProps.placeholder)}
-		/>
+		<SearchBox className={text('className', '')} value={text('value', '')} />
 	</TesterBox>
 ))

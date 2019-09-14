@@ -17,6 +17,7 @@ storiesOf('Input', module).add('InputField', () => (
 		<InputField
 			className={text('className', '')}
 			placeholder={text('placeholder', InputField.defaultProps.placeholder)}
+			value={text('value', '')}
 		/>
 	</TesterBox>
 ))
