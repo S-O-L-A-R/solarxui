@@ -57,6 +57,7 @@
     "typescript-tslint-plugin": "^0.5.4"
   },
   "dependencies": {
+    "react-scrolllock": "^4.0.1",
     "react-spring": "^8.0.27",
     "styled-components": "^4.3.2",
     "tslib": "^1.10.0"

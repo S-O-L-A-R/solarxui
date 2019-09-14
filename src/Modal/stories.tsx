@@ -8,8 +8,16 @@ const Wrapper = styled.div`
 	padding: 24px;
 `
 
+const MockItem = styled.div`
+	height: 500px;
+`
+
 storiesOf('Modal', module).add('Modal', () => (
-	<Modal isOpen={boolean('isOpen', false)}>
-		<Wrapper>{text('children', 'This is very cool modal')}</Wrapper>
-	</Modal>
+	<div>
+		<Modal isOpen={boolean('isOpen', false)}>
+			<Wrapper>{text('children', 'This is very cool modal')}</Wrapper>
+		</Modal>
+		<MockItem>Mock Item</MockItem>
+		<MockItem>Mock Item</MockItem>
+	</div>
 ))

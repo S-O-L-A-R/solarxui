@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { animated } from 'react-spring'
 
 export const Overlay = styled.div`
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -12,7 +12,7 @@ export const Overlay = styled.div`
 `
 
 export const ModalContainer = styled(animated.div)`
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 8px;
 	right: 8px;
