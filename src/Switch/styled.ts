@@ -28,5 +28,6 @@ export const StyledButton = styled.button`
 	font-size: 14px;
 	outline: none;
 	cursor: pointer;
+	background-color: white;
 	${applyActiveStyle};
 `
