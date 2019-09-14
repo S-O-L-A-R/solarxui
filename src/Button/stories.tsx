@@ -1,12 +1,12 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Button from '.'
-import { select, text } from '@storybook/addon-knobs'
+import { select, text, boolean } from '@storybook/addon-knobs'
 
 storiesOf('Button', module).add('Button', () => (
 	<div>
 		<Button
-			children={text('asdasd', 'Button')}
+			children={text('children', 'Button')}
 			className={select(
 				'className',
 				{
@@ -16,6 +16,7 @@ storiesOf('Button', module).add('Button', () => (
 				},
 				'',
 			)}
+			disabled={boolean('Disabled', false)}
 		/>
 	</div>
 ))
