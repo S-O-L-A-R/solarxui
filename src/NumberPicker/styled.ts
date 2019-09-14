@@ -7,5 +7,8 @@ export const StyledContainer = styled.div`
 `
 
 export const StyledNumberContainer = styled.span`
+	display: flex;
+	justify-content: center;
 	font-size: 16px;
+	width: 30px;
 `
