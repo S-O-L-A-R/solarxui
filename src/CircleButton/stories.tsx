@@ -5,6 +5,8 @@ import CircleButton from '.'
 import EditButton from './EditButton'
 import DeleteButton from './DeleteButton'
 import UndoButton from './UndoButton'
+import MinusButton from './MinusButton'
+import PlusButton from './PlusButton'
 
 storiesOf('CircleButton', module).add('CircleButton', () => (
 	<CircleButton
@@ -31,5 +33,19 @@ storiesOf('CircleButton', module).add('UndoButton', () => (
 	<UndoButton
 		className={text('className', '')}
 		size={number('size', UndoButton.defaultProps.size)}
+	/>
+))
+
+storiesOf('CircleButton', module).add('PlusButton', () => (
+	<PlusButton
+		className={text('className', '')}
+		size={number('size', PlusButton.defaultProps.size)}
+	/>
+))
+
+storiesOf('CircleButton', module).add('MinusButton', () => (
+	<MinusButton
+		className={text('className', '')}
+		size={number('size', MinusButton.defaultProps.size)}
 	/>
 ))

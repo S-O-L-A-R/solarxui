@@ -1,13 +1,13 @@
 import React, { HTMLAttributes } from 'react'
-import PlusIcon from '../icons/plus'
-import CircleButton from '../CircleButton'
+import MinusIcon from '../../icons/minus'
+import CircleButton from '../'
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
 	size: number
 }
 
 function PlusButton({ size, onClick }: Props) {
-	return <CircleButton onClick={onClick} size={size} icon={PlusIcon} />
+	return <CircleButton onClick={onClick} size={size} icon={MinusIcon} />
 }
 
 PlusButton.defaultProps = {
