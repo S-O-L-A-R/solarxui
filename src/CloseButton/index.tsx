@@ -9,14 +9,13 @@ const StyledCloseButton = styled.button`
 	height: 32px;
 	width: 32px;
 	border-radius: 50%;
-	color: ${gray[1]};
 	border: 1px solid ${gray[1]};
 	outline: none;
 `
 
 function CloseButton(props: HTMLAttributes<HTMLButtonElement>) {
 	return (
-		<StyledCloseButton className="color-state" {...props}>
+		<StyledCloseButton className="color-state gray1-text" {...props}>
 			<CloseIcon />
 		</StyledCloseButton>
 	)
