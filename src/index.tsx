@@ -43,3 +43,7 @@ export { default as NumberPicker } from './NumberPicker'
 export { default as Switch } from './Switch'
 
 export { default as Separator } from './Separator'
+
+export { default as ImageModal } from './ImageModal'
+
+export { default as ClosableModal } from './ClosableModal'
