@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import { useSpring } from 'react-spring'
 import { ModalContainer, Overlay } from './styled'
-import ScrollLock from 'react-scrolllock'
+// import ScrollLock from 'react-scrolllock'
 
 export interface Props {
 	isOpen?: boolean
@@ -21,7 +21,7 @@ const Modal = ({ isOpen, onClose, children }: Props) => {
 			{isOpen && <Overlay onClick={onClose} />}
 			<ModalContainer style={modalAnimStyle}>
 				{children}
-				<ScrollLock isActive={isOpen} accountForScrollbars={false} />
+				{/* <ScrollLock isActive={isOpen} accountForScrollbars={false} /> */}
 			</ModalContainer>
 		</>
 	)
